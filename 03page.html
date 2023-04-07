@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spela tidspelet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="myheader">
+            <h1>Välkommen till påskspelet!</h1>
+        </header>
+        <nav class="mynav" id="mynav">
+        </nav>
+        <main class="content">
+            <div class="timer">
+                <button onclick="startTimer()">Starta</button>
+                <button onclick="stopTimer()">Stoppa</button>
+                <div id="timer">Starta och stoppa klockan</div>
+                <div id="nailed-timer"></div>
+            </div>
+        </main>
+
+
+        <footer class="myfooter">
+            <iframe src="footer.html" frameborder="0"></iframe>
+        </footer>
+    <script src="script/03script.js"></script>
+    </div>
+</body>
+
+</html>

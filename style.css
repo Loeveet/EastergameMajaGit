@@ -1,0 +1,141 @@
+body {
+    position: relative;
+    background-image: url("images/easterbunny.png");
+    min-height: 95vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+        "myheader myheader myheader myheader myheader"
+        "mynav content content content content"
+        "mynav content content content content"
+        "myfooter myfooter myfooter myfooter myfooter";
+    
+}
+
+/* .grid-container .myheader,
+.myfooter,
+.content,
+.mynav {
+    border: 1px solid black;
+} */
+
+.content {
+    padding: 2em;
+    grid-area: content;
+    width: 80vw;
+}
+
+.mynav {
+    grid-area: mynav;
+    padding: 1em;
+    width: 15vw;
+}
+
+.myfooter {
+    grid-area: myfooter;
+    text-align: start;
+    margin-top: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.myheader {
+    grid-area: myheader;
+    text-align: center;
+    padding: 0px;
+}
+.myheader h1 {
+    text-shadow:  10px 10px 20px rgba(0, 0, 0, 0.4);
+    font-size: 40;
+}
+
+button {
+    width: 100px;
+    align-self: center;
+    margin: 10px;
+}
+
+ul {
+    position: relative;
+    top: 5px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.clue-a {
+    text-decoration: none;
+    color: black;
+}
+
+.clue-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 3em;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.clue-button:hover {
+    opacity: 0.7;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+
+
+#clue-p {
+    font-size: 0.5em;
+}
+
+.move-on {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1px;
+    color: black;
+
+}
+
+.move-on:hover {
+    background-color: yellow;
+}
+
+ul a {
+    display: inline-block;
+    width: 125px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1px;
+    color: black;
+}
+
+ul a:link {
+    text-decoration: none;
+}
+
+ul a:visited {
+    text-decoration: none;
+}
+
+ul a:hover {
+    background-color: aliceblue;
+    text-decoration: none;
+}

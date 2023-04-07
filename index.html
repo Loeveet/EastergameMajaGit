@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="myheader">
+            <h1>Välkommen till påskspelet!</h1>
+        </header>
+        <nav class="mynav" id="mynav">
+        </nav>
+        <main class="content">
+            <h3>I år blir det lite annorlunda mot vad ni är vana med.</h3>
+            <p>Vi börjar med en gåta. Fundera riktigt noga.</p>
+            <p id="clue-p">PS, det finns en ledtråd på den här sidan</p>
+            <div class="first-riddle" id="first-riddle">
+                <button onclick="getclue()" class="clue-button">Gåtan</button>
+                <p id="riddle"></p>
+
+                <label for="guess1">Svar: </label>
+                <input type="text" id="guess1" name="guess1">
+                <button onclick="checkAnswer()">Gissa</button>
+                <div id="displayAnswer"></div>
+            </div>
+        </main>
+
+
+        <footer class="myfooter">
+            <iframe src="footer.html" frameborder="0"></iframe>
+        </footer>
+    </div>
+    <script src="script/01script.js"></script>
+</body>
+
+</html>
